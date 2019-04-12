@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Httpbin tests" parallel="tests">
+    <test name="Get/Post">
+        <parameter name="url" value="http://httpbin.org/" />
+        <parameter name="acceptedEncoding" value="gzip,deflate" />
+        <classes>
+            <class name="HttpBinTest"/>
+        </classes>
+    </test>
+</suite>
+
+

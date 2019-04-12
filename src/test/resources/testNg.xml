@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All" verbose="10">
+    <parameter name="successResponseCode" value="200" />
+    <parameter name="notFoundResponseCode" value="404" />
+    <suite-files>
+        <suite-file path="countries.xml"/>
+        <suite-file path="httpbin.xml"/>
+    </suite-files>
+</suite>
+
+

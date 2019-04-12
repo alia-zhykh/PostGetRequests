@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Countries tests" parallel="tests">
+    <test name="Verify Country Requests">
+        <parameter name="url" value="http://country.io/"/>
+        <parameter name="countryNameJson" value="names.json"/>
+        <parameter name="countryCapitalJson" value="capital.json"/>
+        <parameter name="countryCode" value="BY" />
+        <parameter name="countryName" value="Belarus" />
+        <parameter name="countryCapital" value="Minsk" />
+        <parameter name="incorrectCountryName" value="afghanistant" />
+        <classes>
+            <class name="CountryCodesTest"/>
+        </classes>
+    </test>
+</suite>
+
+
